@@ -9,7 +9,7 @@ module app.common {
 		}
 	}
 	angular.module("app.common", [])
-		.controller("test", function ($scope) {
+		.controller("test2", function ($scope) {
 			$scope.sayHello = function () {
 				let x = "hello world common";
 				alert(x);

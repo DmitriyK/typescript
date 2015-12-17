@@ -4,7 +4,7 @@ var app;
 (function (app) {
     console.log("app");
     angular.module("app", ["app.common"])
-        .controller("test", function ($scope) {
+        .controller("test1", function ($scope) {
         var cc = new app.common.prices("hello world");
         $scope.sayHello = function () {
             var x = cc.price;

@@ -14,7 +14,7 @@ var app;
         })();
         common.prices = prices;
         angular.module("app.common", [])
-            .controller("test", function ($scope) {
+            .controller("test2", function ($scope) {
             $scope.sayHello = function () {
                 var x = "hello world common";
                 alert(x);
