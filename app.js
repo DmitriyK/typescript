@@ -4,10 +4,10 @@ var app;
 (function (app) {
     console.log("app");
     angular.module("app", ["app.common"])
-        .controller("test1", function ($scope) {
-        var cc = new app.common.prices("hello world");
+        .controller("firstController", function ($scope) {
+        var price = new app.common.Price("hello world");
         $scope.sayHello = function () {
-            var x = cc.price;
+            var x = price.price;
             alert(x);
         };
     });

@@ -2,15 +2,18 @@
 
 module app.common {
 	console.log("app.common");
-	export class prices {
-		//price: string;
-		constructor(public price: string) {
+	interface IPrices {
+		price: string;
+	}
+	export class Price implements IPrices{
+		price: string;
+		constructor(price: string) {
 			this.price = price;
 		}
 	}
 	angular.module("app.common", [])
-		.controller("test2", function ($scope) {
-			$scope.sayHello = function () {
+		.controller("secondController", function ($scope) {
+			$scope.sayHello = function ():void {
 				let x = "hello world common";
 				alert(x);
 			}

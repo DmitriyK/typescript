@@ -4,17 +4,15 @@ var app;
     var common;
     (function (common) {
         console.log("app.common");
-        var prices = (function () {
-            //price: string;
-            function prices(price) {
-                this.price = price;
+        var Price = (function () {
+            function Price(price) {
                 this.price = price;
             }
-            return prices;
+            return Price;
         })();
-        common.prices = prices;
+        common.Price = Price;
         angular.module("app.common", [])
-            .controller("test2", function ($scope) {
+            .controller("secondController", function ($scope) {
             $scope.sayHello = function () {
                 var x = "hello world common";
                 alert(x);
